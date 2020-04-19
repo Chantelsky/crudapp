@@ -6,14 +6,14 @@ import InputBase from '@material-ui/core/InputBase';
 import Button from '@material-ui/core/Button';
 import { fade } from '@material-ui/core/styles/colorManipulator';
 import { withStyles } from '@material-ui/core/styles';
-import searchIcon from '@material-ui/icons/Search';
+import SearchIcon from '@material-ui/icons/Search';
 import { withAuth } from '@okta/okta-react';
 
 const styles = (theme) => ({
   root: {
     width: '100%'
   },
-  MultiAppBar: {
+  MuiAppBar: {
     alignItems: 'center'
   },
   grow: {
@@ -26,7 +26,7 @@ const styles = (theme) => ({
     }
   },
   search: {
-    poition: 'relative',
+    position: 'relative',
     borderRadius: theme.shape.borderRadius,
     backgroundColor: fade(theme.palette.common.white, 0.15),
     '&:hover': {
@@ -65,7 +65,7 @@ const styles = (theme) => ({
     }
   },
   toolbar: {
-    alginItems: 'center'
+    alignItems: 'center'
   }
 });
 

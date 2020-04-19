@@ -28,7 +28,7 @@ const GithubRepo = ({ classes, onKudo, isKudo, repo }) => {
   };
 
   return (
-    <Card className={card}>
+    <Card className={classes.card}>
       <CardHeader title={repo.full_name} />
       <CardContent>
         <Typography
@@ -47,4 +47,4 @@ const GithubRepo = ({ classes, onKudo, isKudo, repo }) => {
   );
 };
 
-export default GithubRepo;
+export default withStyles(styles)(GithubRepo);
