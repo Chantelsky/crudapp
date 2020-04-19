@@ -15,7 +15,7 @@ const Login = (props) => {
 
   useEffect(() => {
     checkAuthentication();
-  }, []);
+  }, []); // eslint-disable-line
 
   const login = async (e) => {
     props.auth.login('/home');
